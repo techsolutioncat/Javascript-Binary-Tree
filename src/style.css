@@ -8,9 +8,18 @@ canvas {
 }
 
 button {
-    padding: 4px;
-    margin: 0px 8px;
-    min-width: 64px;
+  min-width: 64px;
+  background-color: #4CAF50;
+  border: none;
+  color: #FFFFFF;
+  padding: 15px 32px;
+  text-align: center;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s;
+  margin: 16px 15px !important;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
 }
 
 #controls {
@@ -21,7 +30,9 @@ button {
 }
 
 #speed-label, #help-label {
-    line-height: 200%;
-    padding: 0px 8px;
-    color: white;
+  line-height: 200%;
+  padding: 0px 8px;
+  color: white;
+  margin-top: 23px;
+  margin-right: 10px;
 }

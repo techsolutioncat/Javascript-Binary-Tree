@@ -17,6 +17,7 @@ class Controls {
     static ADDID = "add-btn";
     static SEARCHID = "search-btn";
     static SLIDERID = "speed-slider";
+    static BINARY = "canvas-placeholder";
 
     // The number of nodes above which the user will be warned before running
     // "Fill" or "Quick Fill"
@@ -35,6 +36,7 @@ class Controls {
         //this.addBtn = document.getElementById(Controls.ADDID);        
         this.searchBtn = document.getElementById(Controls.SEARCHID);
         this.speedSlider = document.getElementById(Controls.SLIDERID);
+        this.node = document.getElementById(Controls.BINARY);
 
         // Set the animation interval based on the slider's value
         this.setAnimationSpeed();
@@ -60,6 +62,11 @@ class Controls {
         })    
         //this.addBtn.addEventListener('click',
             //() => this.triggerAnimation(this.add));
+
+        this.node.addEventListener('click', function(e) {
+            console.log(e);
+        });
+        
         this.searchBtn.addEventListener('click',
             () => this.triggerAnimation(this.search));
 
